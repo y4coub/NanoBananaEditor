@@ -12,7 +12,7 @@ A production-ready React + TypeScript application for delightful image generatio
 
 [![Nano Banana Image Editor](https://getsmartgpt.com/nano-banana-editor.jpg)](https://nanobananaeditor.dev)
 
-🍌 [Try the LIVE Demo](https://nanobananaeditor.dev)
+🍌 [Try the LIVE Demo](https://nanobananaeditor.dev) - **NOTE**: Due to high demand, free credits are no longer available.
 
 ## ✨ Key Features
 
