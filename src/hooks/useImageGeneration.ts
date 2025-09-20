@@ -22,8 +22,8 @@ export const useImageGeneration = () => {
           type: 'output',
           url: `data:image/png;base64,${base64}`,
           mime: 'image/png',
-          width: 1024, // Default Gemini output size
-          height: 1024,
+          width: 1080, // Default Gemini output size
+          height: 1920,
           checksum: base64.slice(0, 32) // Simple checksum
         }));
 
@@ -40,16 +40,16 @@ export const useImageGeneration = () => {
             type: 'original',
             url: `data:image/png;base64,${request.referenceImages[0]}`,
             mime: 'image/png',
-            width: 1024,
-            height: 1024,
+            width: 1080,
+            height: 1920,
             checksum: request.referenceImages[0].slice(0, 32)
           }] : request.referenceImages ? request.referenceImages.map((img, index) => ({
             id: generateId(),
             type: 'original' as const,
             url: `data:image/png;base64,${img}`,
             mime: 'image/png',
-            width: 1024,
-            height: 1024,
+            width: 1080,
+            height: 1920,
             checksum: img.slice(0, 32)
           })) : [],
           outputAssets,
@@ -224,8 +224,8 @@ export const useImageEditing = () => {
           type: 'output',
           url: `data:image/png;base64,${base64}`,
           mime: 'image/png',
-          width: 1024,
-          height: 1024,
+          width: 1080,
+          height: 1920,
           checksum: base64.slice(0, 32)
         }));
 
@@ -235,8 +235,8 @@ export const useImageEditing = () => {
           type: 'mask',
           url: `data:image/png;base64,${maskedReferenceImage}`,
           mime: 'image/png',
-          width: 1024,
-          height: 1024,
+          width: 1080,
+          height: 1920,
           checksum: maskedReferenceImage.slice(0, 32)
         } : undefined;
 
